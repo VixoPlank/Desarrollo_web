@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo'>Manejo DOM con JavaScript</h1>
+    <br/>
+    <div id='mostrar'></div>
+    <script>
+        // El evento onclick en JavaScript te permite como programador, ejecutar una función cuando se le da clic a un elemento
+        document.getElementById('titulo').onclick = cambiarTexto;
+
+        function cambiarTexto(){
+            document.getElementById('mostrar').innerHTML = 'Nuevo contenido';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <!--
+        AddEventListener () es una función o método incorporado en JavaScript que toma el evento y lo pone a escuchar, 
+        y un segundo argumento para llamar cada vez que se desencadena el evento descrito. 
+        Se puede agregar cualquier número de controladores de eventos a un solo elemento 
+        sin sobrescribir los controladores de eventos existentes.
+    -->
+    <h1 id='titulo'>Manejo DOM con JavaScript</h1>
+    <br/>
+    Nombre: <input type="text" id='nombre'/>
+    <br/><br/>
+    Apellido: <input type="text" id='apellido'/>
+    <script>
+        document.getElementById('nombre').addEventListener('focus', cambiar);
+        document.getElementById('nombre').addEventListener('blur', regresar);
+
+        document.getElementById('apellido').addEventListener('focus', cambiar);
+        document.getElementById('apellido').addEventListener('blur', regresar);
+
+        function cambiar(evento){
+            let componente = evento.target;
+            componente.style.background = 'yellow';
+        }
+        function regresar(evento){
+            evento.target.style.background = 'white';
+        }
+    </script>
+</body>
+</html>

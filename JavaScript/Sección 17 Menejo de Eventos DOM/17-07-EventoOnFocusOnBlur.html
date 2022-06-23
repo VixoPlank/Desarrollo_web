@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <!--
+        El evento onFocus se dispara cuando el objeto toma foco y el evento onBlur cuando el objeto pierde el foco.
+        El evento onFocus se ejecuta cuando un componente de nuestra web toma el foco,
+        y el onBlur justamente lo contrario, se ejecuta cuando el componente pierde el foco.
+    -->
+    <h1 id='titulo'>Manejo DOM con JavaScript</h1>
+    <br/>
+    Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+    <br/><br/>
+    Apellido: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+    <script>
+        function cambiar(elementoInput){
+            elementoInput.style.background = 'yellow';
+        }
+        function regresar(elementoInput){
+            elementoInput.style.background = 'white';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id='titulo'>Manejo DOM con JavaScript</h1>
+    <br/>
+    <!--
+        El evento OnChange se produce en las siguientes situaciones: Los datos de una columna de formulario cambian y se pierde el foco.
+    -->
+    Nombre: <input type="text" onchange="convertir(this)"/>
+    <script>
+        function convertir(nombreInput){
+            nombreInput.value = nombreInput.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

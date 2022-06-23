@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM con JavaScript</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class='azul'>Ejemplo DOM con JavaScript</h1>
+    <p class='azul'>Saludos!</p>
+    <p class='azul'>Otro parrafo</p>
+    <script>
+        //El querySelectorAll() método devuelve todos los elementos del documento que coincide con un CSS especificado selector(s) , 
+        //como un objeto NodeList estática.
+        // aqui aplica todo los párrafos (p) con la clase azul (.azul)
+        let elementos = document.querySelectorAll('p.azul');
+        console.log( `No. elementos: ${elementos.length}`);
+        for(let elemento of elementos){
+            console.log(`${elemento.innerHTML}`);
+        }
+    </script>
+
+</body>
+</html>

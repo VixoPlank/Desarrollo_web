@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <!--
+        El evento onmouseover ocurre cuando el puntero del mouse se mueve sobre un elemento o sobre uno de sus elementos secundarios. 
+        Sugerencia: este evento se usa a menudo junto con el evento onmouseout , 
+        que ocurre cuando un usuario mueve el puntero del mouse fuera de un elemento.
+
+        El evento onmouseout ocurre cuando el puntero del mouse se mueve fuera de un elemento o de uno de sus elementos secundarios.
+    -->
+    <h1 id='titulo' onmouseover="rojo(this)" onmouseout="azul(this)">
+        Manejo DOM con JavaScript
+    </h1>
+    <br/>
+    <script>
+        function rojo(titulo){
+            titulo.style.color = 'red';
+        }
+        function azul(titulo){
+            titulo.style.color = 'blue';
+        }
+    </script>
+</body>
+</html>

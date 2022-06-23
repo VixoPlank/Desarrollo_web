@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1>Manejo DOM con JavaScript</h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <br/>
+    <script>
+        // El write()método escribe directamente en un flujo de documentos abiertos (HTML).
+
+        // OJO:
+        
+        // El write()método elimina todo el HTML existente cuando se usa en un documento cargado.
+        // El write()método no se puede utilizar en XHTML o XML.
+        document.write('Saludos desde JavaScript');
+        
+        function mostrar(){
+            document.write('Adios');
+        }
+    </script>
+</body>
+</html>
